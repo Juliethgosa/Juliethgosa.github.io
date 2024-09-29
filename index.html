@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: ##FFFFFF;
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #bd1a7e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #bd1a7e;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #bd1a7e;
+        }
+        .cover-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin-top: -75px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .entry {
+            margin-bottom: 40px;
+        }
+        .entry h2 {
+            color: #bd1a7e;
+        }
+        .entry p {
+            line-height: 1.6;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .image-gallery img {
+            width: 32%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #bd1a7e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mi Blog Personal Julieth Gomez</h1>
+    </div>
+    <div class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre Mí</a>
+        <a href="#posts">Entradas</a>
+        <a href="#contact">Contacto</a>
+    </div>
+    <img src="images/cover.jpg" alt="Portada" class="cover-image">
+    <div class="container">
+        <img src="images/profile.jpg" alt="Perfil" class="profile-image">
+        <div class="entry" id="about">
+            <h2>¡Hola! Soy Julieth Gomez</h2>
+            <p>¡Hola! Quiero compartir contigo algo de mi vida, tengo 33 años y soy madre de un hijo maravilloso. Soy tecnóloga en sistemas mecatrónicos, un campo que me apasiona y que me permite combinar mi amor por la programación con el fascinante mundo de la tecnología.En mi tiempo libre, disfruto de una variedad de intereses que me mantienen equilibrada y feliz. Me encanta la música, que considero una fuente inagotable de inspiración y energía. También soy una gran fan del anime, que me permite explorar historias y mundos imaginativos que estimulan mi creatividad.El deporte es otra de mis pasiones, especialmente correr, que no solo me ayuda a mantenerme en forma, sino que también me brinda momentos de reflexión y serenidad. A pesar de mi discreción natural, siempre me esfuerzo por ser amable y estoy dispuesta a ayudar a los demás siempre que pueda. Valoro profundamente las conexiones humanas y creo firmemente en el poder de la empatía y la solidaridad.Estoy emocionada de compartir un poco sobre mí y estoy abierta a nuevas experiencias y conexiones que me permitan seguir creciendo tanto personal como profesionalmente.</p>
+            <div class="image-gallery">
+                <img src="images/software-engineering.jpg" alt="Ingeniería de Software">
+                <img src="images/data-analysis.jpg" alt="Análisis de Datos">
+                <img src="images/coding.jpg" alt="Programación">
+            </div>
+        </div>
+        <div class="entry" id="posts">
+            <h2>Entradas Recientes</h2>
+            <div class="entry">
+                <h3>Etapas de Desarrollo de Software</h3>
+                <p>El desarrollo de software generalmente se divide en varias etapas clave, cada una con sus propias actividades y objetivos. Las etapas comunes incluyen la planificación, el análisis de requisitos, el diseño, la implementación, las pruebas y el mantenimiento. Cada una de estas fases juega un papel crucial en el aseguramiento de la calidad del producto final.</p>
+                <img src="images/software-development.jpg" alt="Desarrollo de Software" style="width: 100%; border-radius: 8px;">
+            </div>
+            <div class="entry">
+                <h3>Características del Software</h3>
+                <p>Las características esenciales del software incluyen la funcionalidad, la confiabilidad, la usabilidad, el rendimiento y la mantenibilidad. Estas características determinan cómo el software cumple con los requisitos del usuario, su estabilidad en diferentes condiciones de operación, su facilidad de uso, su eficiencia y su capacidad para ser modificado o mejorado con el tiempo.</p>
+                <img src="images/software-characteristics.jpg" alt="Características del Software" style="width: 100%; border-radius: 8px;">
+            </div>
+            <div class="entry">
+                <h3>Metodologías de Desarrollo de Software</h3>
+                <p>Existen diversas metodologías para el desarrollo de software, incluyendo el modelo en cascada, el desarrollo ágil, Scrum, y DevOps, entre otros. Cada metodología tiene sus propias prácticas y enfoques para gestionar el ciclo de vida del software, desde la concepción hasta la entrega y mantenimiento. La elección de una metodología puede depender de las necesidades del proyecto y del equipo de desarrollo.</p>
+                <img src="images/software-methodologies.jpg" alt="Metodologías de Desarrollo" style="width: 100%; border-radius: 8px;">
+            </div>
+            
+            <h1>Cómo utilizar Git: Tutorial completo</h1>
+
+    <!-- Sección 1: Inicializar repositorio -->
+    <h2>1. Inicializar un repositorio localmente</h2>
+    <p>El primer paso es crear un repositorio local en tu máquina. Un repositorio es el lugar donde Git almacenará el historial de cambios de tu proyecto.</p>
+
+    <h3>Comandos:</h3>
+    <pre><code>git init</code></pre>
+
+    <h3>Explicación:</h3>
+    <p><strong>git init</strong>: Este comando inicializa un repositorio vacío en el directorio donde te encuentres. Después de ejecutarlo, Git comenzará a rastrear los cambios en los archivos de ese directorio.</p>
+
+    <h3>Ejemplo:</h3>
+    <p>1. Abre la terminal o consola de comandos.</p>
+    <p>2. Navega a la carpeta donde se encuentra tu proyecto.</p>
+    <p>3. Escribe <code>git init</code> y presiona enter.</p>
+     
+    <img src="images/comandos img 2.JPG" >
+
+    <img src="images/Comandos img 1.JPG" >
+    
+    <!-- Sección 2: Creación de branches -->
+    <h2>2. Crear ramas (branches)</h2>
+    <p>En Git, una rama (branch) es una línea independiente de desarrollo. Utilizar branches te permite trabajar en características o correcciones sin afectar la rama principal del proyecto. Al terminar, puedes fusionar (merge) la rama con el trabajo final en el repositorio.</p>
+
+    <h3>Comandos:</h3>
+    <pre><code>git branch nombre-de-la-rama</code></pre>
+    <pre><code>git checkout nombre-de-la-rama</code></pre>
+     <img src="images/branches 1.JPG" alt="">
+    <h3>Explicación:</h3>
+    <p><strong>git branch nombre-de-la-rama</strong>: Este comando crea una nueva rama con el nombre que elijas. Las ramas te permiten trabajar en partes específicas del proyecto de forma aislada.</p>
+    
+    <p><strong>git checkout nombre-de-la-rama</strong>: Este comando cambia la rama activa, lo que significa que ahora trabajarás en la rama recién creada.</p>
+
+    <h3>Ejemplo:</h3>
+    <p>1. Supongamos que estás trabajando en una nueva funcionalidad llamada <code>feature-login</code>. Primero, crea la rama:</p>
+    <img src="images/branches 2.JPG" alt="">
+    <pre><code>git branch feature-login</code></pre>
+    <p>2. Después, cambia a esa nueva rama para trabajar en ella:</p>
+    <img src="images/branches 3.JPG" alt="">
+    <pre><code>git checkout feature-login</code></pre>    
+    <p>3. Ahora, cualquier cambio que hagas se almacenará en la rama <code>feature-login</code>, sin afectar a la rama principal (normalmente llamada <code>main</code> o <code>master</code>).</p>
+
+   
+    <!-- Sección 3: Fusionar ramas -->
+    <h2>3. Fusionar ramas (merge)</h2>
+    <p>Una vez que terminas de trabajar en una rama, es momento de fusionar esos cambios con la rama principal.</p>
+
+    <h3>Comandos:</h3>
+    <img src="images/fusionar ramas1.JPG" alt="">
+    <pre><code>git checkout main</code></pre>
+    <pre><code>git merge feature-login</code></pre>
+
+    <h3>Explicación:</h3>
+    <p><strong>git checkout main</strong>: Cambias de nuevo a la rama principal (<code>main</code> o <code>master</code>).</p>
+    <p><strong>git merge feature-login</strong>: Fusionas la rama <code>feature-login</code> con la rama principal.</p>
+
+    <h3>Ejemplo:</h3>
+    <p>1. Después de terminar el trabajo en la rama <code>feature-login</code>, primero cambias de nuevo a la rama <code>main</code>:</p>
+     <img src="images/fusionar ramas 2.JPG" alt="">
+    <pre><code>git checkout main</code></pre>
+    <p>2. Luego, fusionas los cambios de <code>feature-login</code> con <code>main</code>:</p>
+    <img src="images/fusionar ramas 3.JPG" alt="">
+    <pre><code>git merge feature-login</code></pre>
+    <p>3. Ahora, los cambios de la rama <code>feature-login</code> se aplicarán en la rama principal.</p>
+
+    <!-- Sección 4: Conectar a un repositorio remoto -->
+    <h2>4. Agregar un repositorio remoto (GitHub)</h2>
+    <p>Una vez que hayas trabajado localmente, es común querer subir los cambios a un repositorio remoto como GitHub. Para hacerlo, debes conectar tu repositorio local con un remoto.</p>
+
+    <h3>Comandos:</h3>
+    <img src="images/repositorios 1.JPG" alt="">
+    <pre><code>git remote add origin https://github.com/usuario/nombre-repositorio.git</code></pre>
+    <pre><code>git push -u origin main</code></pre>
+
+    <h3>Explicación:</h3>
+    <p><strong>git remote add origin URL</strong>: Conecta tu repositorio local con un <strong>repositorio remoto</strong> en GitHub. Debes reemplazar <code>URL</code> por la URL de tu repositorio en GitHub.</p>
+    <p><strong>git push -u origin main</strong>: Subes tus cambios locales a la rama <code>main</code> del repositorio remoto en GitHub.</p>
+
+    <h3>Ejemplo:</h3>
+    <p>1. Entra en GitHub y crea un nuevo repositorio (sin README o archivos predefinidos).</p>
+    <p>2. Copia la URL de tu nuevo repositorio.</p>
+    <p>3. En tu terminal, escribe el siguiente comando para enlazar tu repositorio local con el remoto:</p>
+    <pre><code>git remote add origin https://github.com/usuario/nombre-repositorio.git</code></pre>
+    <img src="images/repositorios 2.JPG" alt="">
+    <p>4. Ahora sube tus cambios al repositorio remoto con:</p>
+    <pre><code>git push -u origin main</code></pre>
+
+    <img src="images/repositorios 3.JPG" alt="">
+
+    <h2>Conclusión</h2>
+    <p>Con este tutorial, has aprendido los pasos esenciales para trabajar con Git. Desde inicializar un repositorio localmente, crear ramas, fusionarlas y finalmente subir tu proyecto a GitHub. ¡Ahora puedes gestionar versiones de código de manera eficiente!</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Mi Blog Personal. Todos los derechos reservados.</p>
+    </div>
+</body>
+</html>
